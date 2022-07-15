@@ -1,0 +1,13 @@
+{
+  "name": "jove-redesigne",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tailwind-watch": "npx tailwindcss -i tailwind.css -o index.css --watch",
+    "tailwind-build": "npx tailwindcss -i tailwind.css -o index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

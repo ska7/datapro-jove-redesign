@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Jove Redesign</title>
+  </head>
+  <body>
+    <header class="bg-navbar-bg h-[52px]">
+      <div class="py-[9px] pl-10 pr-[52px] flex">
+        <img src="./assets/main-logo.svg" class="flex-1" />
+        <div class="flex-3 flex items-center justify-center">
+          <div class="w-[300px] h-4/5 relative">
+            <img
+              src="./assets/search-icon.svg"
+              width="16"
+              class="absolute right-3 top-0 bottom-0 my-auto"
+            />
+            <input
+              placeholder="Search..."
+              class="w-full h-full rounded-3xl text-sm text-gray font-medium pl-5"
+            />
+          </div>
+        </div>
+        <div class="flex-5">
+          <nav class="h-full flex justify-end">
+            <ul class="flex justify-center items-center h-full">
+              <li class="nav-item nav-item-active"><a>AP Biology</a></li>
+              <li class="nav-item">
+                <a>AP Chemistry</a>
+              </li>
+              <li class="nav-item sign-in-btn">
+                <a class="flex"
+                  ><p>Sign In</p>
+                  <img class="ml-4" width="16" src="./assets/sign-in-icon.svg"
+                /></a>
+              </li>
+              <li class="nav-item">
+                <a>Sign Up</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <section class="w-full flex mt-8">
+          <img src="/assets/main-logo-dark.svg" width="210" height="53" />
+          <h1
+            class="flex-3 text-3xl font-semibold flex items-center text-[#163B45] leading-9 ml-12"
+          >
+            Ace your AP exam with short videos and practice tests
+          </h1>
+        </section>
+        <section class="mt-9 flex">
+          <div class="subject-card biology-card selected-card">
+            <span class="subject-card-label">AP Biology</span>
+          </div>
+          <div class="subject-card chemistry-card">
+            <span class="subject-card-label">AP Chemistry</span>
+          </div>
+          <div></div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

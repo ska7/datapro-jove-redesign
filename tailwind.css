@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  @apply box-border;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+
+header {
+  mix-blend-mode: normal;
+  box-shadow: 0px 4px 4px rgba(36, 41, 46, 0.27);
+}
+
+.nav-item {
+  @apply h-[85%] w-28 font-medium text-sm text-white flex justify-center items-center hover:cursor-pointer leading-5;
+}
+
+.nav-item:not(:first-of-type, :last-of-type) {
+  @apply ml-10;
+}
+
+.nav-item-active {
+  @apply rounded-[20px] bg-navbar-btn/50;
+}
+
+.sign-in-btn {
+  @apply !pr-0;
+}
+
+.sign-in-btn:after {
+  content: " | ";
+  @apply pl-5 text-3xl font-thin flex items-center;
+}
+
+main {
+  @apply h-[600px] w-screen flex justify-center items-center;
+}
+
+.main-container {
+  width: calc(100vw - 14%);
+  @apply h-full;
+}
+
+.subject-card {
+  @apply bg-cover h-[268px] w-[593px] rounded-[30px] mx-3 flex justify-center items-end;
+}
+
+.biology-card {
+  @apply bg-[url('/assets/card-biology.jpg')];
+}
+
+.chemistry-card {
+  @apply bg-[url('/assets/card-chemistry.jpg')];
+}
+
+.selected-card {
+  @apply border-2 border-[#1ABCAC];
+}
+
+.subject-card-label {
+  @apply font-bold text-[22px] leading-[26px] rounded-t-[30px] h-[60px] w-[200px] bg-white text-inactive-card-green flex justify-center items-center;
+}
+
+.selected-card > .subject-card-label {
+  @apply !bg-[#0A9B8D] !text-white !font-black;
+}
