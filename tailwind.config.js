@@ -8,6 +8,7 @@ module.exports = {
         "navbar-btn": "#0EC5B4",
         "banner-title-green": "#0A9B8D",
         "inactive-card-green": "rgba(10, 155, 141, 0.7)",
+        "text-secondary": "#163B45",
         gray: "#909AA4",
       },
       backgroundImage: {

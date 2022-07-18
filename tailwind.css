@@ -13,6 +13,25 @@
   font-style: normal;
 }
 
+video {
+  filter: drop-shadow(0px 4px 20px rgba(144, 154, 164, 0.15));
+}
+
+/* GENERAL */
+
+.content-paragraph {
+  @apply text-text-secondary text-[19px] font-light leading-[26px] py-3;
+}
+
+.bg-banner {
+  background: rgba(227, 248, 235, 0.5);
+  border-radius: 205.5px;
+  width: 1002px;
+  z-index: 9;
+}
+
+/* HEADER */
+
 header {
   mix-blend-mode: normal;
   box-shadow: 0px 4px 4px rgba(36, 41, 46, 0.27);
@@ -38,6 +57,8 @@ header {
   content: "|";
   @apply pl-8 text-3xl font-thin flex items-center;
 }
+
+/* SUBJECT CARDS */
 
 main {
   @apply h-[600px] w-screen flex justify-center items-center;
@@ -90,7 +111,7 @@ main {
 }
 
 .ap-included-content > p {
-  @apply pl-[25px] text-[#163B45];
+  @apply pl-[25px] text-text-secondary;
 }
 
 .ap-content-banner {
@@ -98,11 +119,12 @@ main {
   @apply bottom-0 flex flex-col justify-center items-start pl-24 pt-16;
 }
 
-.bg-banner {
-  position: absolute;
-  background: rgba(227, 248, 235, 0.5);
-  border-radius: 205.5px;
-  height: 400px;
-  width: 1002px;
-  z-index: 9;
+.banner-title {
+  @apply font-black text-banner-title-green;
+}
+
+/* Video Lessons Section */
+
+.subject-button {
+  @apply border border-navbar-btn bg-white w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] font-bold mr-[31px];
 }
