@@ -578,6 +578,10 @@ video {
   bottom: 0px;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
@@ -599,8 +603,20 @@ video {
   margin-top: 2.25rem;
 }
 
+.mt-\[89px\] {
+  margin-top: 89px;
+}
+
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .h-\[52px\] {
@@ -613,6 +629,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[153px\] {
+  height: 153px;
 }
 
 .w-\[300px\] {
@@ -635,6 +655,10 @@ video {
   flex: 5;
 }
 
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
 }
@@ -645,6 +669,10 @@ video {
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .rounded-3xl {
@@ -659,6 +687,11 @@ video {
 .py-\[9px\] {
   padding-top: 9px;
   padding-bottom: 9px;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pl-10 {
@@ -683,6 +716,10 @@ video {
   line-height: 2.25rem;
 }
 
+.text-\[50px\] {
+  font-size: 50px;
+}
+
 .font-medium {
   font-weight: 500;
 }
@@ -691,8 +728,16 @@ video {
   font-weight: 600;
 }
 
+.font-black {
+  font-weight: 900;
+}
+
 .leading-9 {
   line-height: 2.25rem;
+}
+
+.leading-\[59px\] {
+  line-height: 59px;
 }
 
 .text-gray {
@@ -703,6 +748,11 @@ video {
 .text-\[\#163B45\] {
   --tw-text-opacity: 1;
   color: rgb(22 59 69 / var(--tw-text-opacity));
+}
+
+.text-banner-title-green {
+  --tw-text-opacity: 1;
+  color: rgb(10 155 141 / var(--tw-text-opacity));
 }
 
 *, 
@@ -748,14 +798,15 @@ header {
 }
 
 .sign-in-btn {
+  min-width: 118px;
   padding-right: 0px !important;
 }
 
 .sign-in-btn:after {
-  content: " | ";
+  content: "|";
   display: flex;
   align-items: center;
-  padding-left: 1.25rem;
+  padding-left: 2rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 100;
@@ -784,6 +835,13 @@ main {
   justify-content: center;
   border-radius: 30px;
   background-size: cover;
+}
+
+@media (max-width: 1023px) {
+  .subject-card {
+    margin-top: 2rem;
+    width: 75%;
+  }
 }
 
 .biology-card {
@@ -822,4 +880,89 @@ main {
   font-weight: 900 !important;
   --tw-text-opacity: 1 !important;
   color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
+
+/* What's Included Section */
+
+.card {
+  box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  grid-column: span 1 / span 1;
+  display: flex;
+  height: 153px;
+  width: 394px;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 52px;
+  padding-left: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  line-height: 23.44px;
+  --tw-text-opacity: 1;
+  color: rgb(15 70 78 / var(--tw-text-opacity));
+}
+
+.ap-included-content {
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+}
+
+.ap-included-content:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+.ap-included-content > p {
+  padding-left: 25px;
+  --tw-text-opacity: 1;
+  color: rgb(22 59 69 / var(--tw-text-opacity));
+}
+
+.ap-content-banner {
+  right: calc(77% - 100vw);
+  bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 6rem;
+  padding-top: 4rem;
+}
+
+.bg-banner {
+  position: absolute;
+  background: rgba(227, 248, 235, 0.5);
+  border-radius: 205.5px;
+  height: 400px;
+  width: 1002px;
+  z-index: 9;
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1023px) {
+  .md-max\:flex-col {
+    flex-direction: column;
+  }
+
+  .md-max\:items-center {
+    align-items: center;
+  }
+
+  .md-max\:justify-center {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1279px) {
+  .lg-max\:flex-col {
+    flex-direction: column;
+  }
 }

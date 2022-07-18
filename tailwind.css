@@ -31,12 +31,12 @@ header {
 }
 
 .sign-in-btn {
-  @apply !pr-0;
+  @apply !pr-0 min-w-[118px];
 }
 
 .sign-in-btn:after {
-  content: " | ";
-  @apply pl-5 text-3xl font-thin flex items-center;
+  content: "|";
+  @apply pl-8 text-3xl font-thin flex items-center;
 }
 
 main {
@@ -49,7 +49,7 @@ main {
 }
 
 .subject-card {
-  @apply bg-cover h-[268px] w-[593px] rounded-[30px] mx-3 flex justify-center items-end;
+  @apply bg-cover h-[268px] w-[593px] rounded-[30px] mx-3 flex justify-center items-end md-max:mt-8 md-max:w-3/4;
 }
 
 .biology-card {
@@ -69,5 +69,40 @@ main {
 }
 
 .selected-card > .subject-card-label {
-  @apply !bg-[#0A9B8D] !text-white !font-black;
+  @apply !bg-banner-title-green !text-white !font-black;
+}
+
+/* What's Included Section */
+
+.card {
+  box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  @apply w-[394px] h-[153px] rounded-[52px] col-span-1 flex justify-start items-center font-bold text-[#0F464E] leading-[23.44px] pl-7 text-xl;
+}
+
+.ap-included-content {
+  @apply flex font-semibold text-lg leading-5;
+}
+
+.ap-included-content:not(:first-of-type) {
+  @apply mt-[40px];
+}
+
+.ap-included-content > p {
+  @apply pl-[25px] text-[#163B45];
+}
+
+.ap-content-banner {
+  right: calc(77% - 100vw);
+  @apply bottom-0 flex flex-col justify-center items-start pl-24 pt-16;
+}
+
+.bg-banner {
+  position: absolute;
+  background: rgba(227, 248, 235, 0.5);
+  border-radius: 205.5px;
+  height: 400px;
+  width: 1002px;
+  z-index: 9;
 }

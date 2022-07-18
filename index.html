@@ -23,6 +23,7 @@
               src="./assets/search-icon.svg"
               width="16"
               class="absolute right-3 top-0 bottom-0 my-auto"
+              alt="search-icon"
             />
             <input
               placeholder="Search..."
@@ -40,7 +41,11 @@
               <li class="nav-item sign-in-btn">
                 <a class="flex"
                   ><p>Sign In</p>
-                  <img class="ml-4" width="16" src="./assets/sign-in-icon.svg"
+                  <img
+                    class="ml-4"
+                    width="16"
+                    src="./assets/sign-in-icon.svg"
+                    alt="sign-in-icon"
                 /></a>
               </li>
               <li class="nav-item">
@@ -54,14 +59,21 @@
     <main>
       <div class="main-container">
         <section class="w-full flex mt-8">
-          <img src="/assets/main-logo-dark.svg" width="210" height="53" />
+          <img
+            src="/assets/main-logo-dark.svg"
+            width="210"
+            height="53"
+            alt="jove-logo-dark"
+          />
           <h1
             class="flex-3 text-3xl font-semibold flex items-center text-[#163B45] leading-9 ml-12"
           >
             Ace your AP exam with short videos and practice tests
           </h1>
         </section>
-        <section class="mt-9 flex">
+        <section
+          class="mt-9 flex lg:flex-row md-max:flex-col md-max:justify-center md-max:items-center"
+        >
           <div class="subject-card biology-card selected-card">
             <span class="subject-card-label">AP Biology</span>
           </div>
@@ -69,6 +81,62 @@
             <span class="subject-card-label">AP Chemistry</span>
           </div>
           <div></div>
+        </section>
+        <section class="grid grid-rows-2 mt-[89px] relative">
+          <div class="flex justify-between lg-max:flex-col h-[153px] z-10">
+            <div class="card">
+              <img src="./assets/video-icon.svg" width="89" />
+              <p>Engaging video lessons aligned to AP syllabus</p>
+            </div>
+            <div class="card px-9">
+              <img src="./assets/audience-icon.svg" width="89" />
+              <p>
+                Answer Explanations <br />
+                in video and text
+              </p>
+            </div>
+            <div class="card">
+              <img src="./assets/book-icon.svg" width="89" />
+              <p>
+                Multiple practice<br />
+                tests
+              </p>
+            </div>
+          </div>
+          <div class="mt-[40px] z-10">
+            <ul>
+              <li class="ap-included-content">
+                <img width="18" src="./assets/bullet-point.svg" />
+                <p>400+ animated video lessons covering AP test content</p>
+              </li>
+              <li class="ap-included-content">
+                <img width="18" src="./assets/bullet-point.svg" />
+                <p>
+                  900+ practice questions with detailed answer explanations in
+                  text and video
+                </p>
+              </li>
+              <li class="ap-included-content">
+                <img width="18" src="./assets/bullet-point.svg" />
+                <p>
+                  Diagnostic and full length practice tests with performance
+                  breakdowns
+                </p>
+              </li>
+              <li class="ap-included-content">
+                <img width="18" src="./assets/bullet-point.svg" />
+                <p>Score tracking to check your progress</p>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-banner ap-content-banner">
+            <p
+              class="font-black text-[50px] leading-[59px] text-banner-title-green"
+            >
+              What's<br />
+              Included?
+            </p>
+          </div>
         </section>
       </div>
     </main>
