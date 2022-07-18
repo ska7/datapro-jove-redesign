@@ -20,7 +20,7 @@ video {
 /* GENERAL */
 
 .content-paragraph {
-  @apply text-text-secondary text-[19px] font-light leading-[26px] py-3;
+  @apply text-text-secondary text-[19px] font-light leading-[26px] py-8;
 }
 
 .bg-banner {
