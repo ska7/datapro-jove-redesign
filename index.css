@@ -1341,18 +1341,26 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+  .lg\:absolute {
+    position: absolute;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 }
 
 @media (max-width: 1023px) {
-  .md-max\:m-0 {
-    margin: 0px;
+  .md-max\:ml-0 {
+    margin-left: 0px;
   }
 
-  .md-max\:\!m-0 {
-    margin: 0px !important;
+  .md-max\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .md-max\:mt-\[300px\] {
+    margin-top: 300px;
   }
 
   .md-max\:flex {
@@ -1371,21 +1379,35 @@ footer {
     justify-content: center;
   }
 
-  .md-max\:\!pr-0 {
-    padding-right: 0px !important;
+  .md-max\:bg-transparent {
+    background-color: transparent;
   }
 
   .md-max\:pr-0 {
     padding-right: 0px;
-  }
-
-  .md-max\:text-center {
-    text-align: center;
   }
 }
 
 @media (max-width: 1279px) {
   .lg-max\:flex-col {
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-min\:absolute {
+    position: absolute;
+  }
+
+  .lg-min\:top-\[-15px\] {
+    top: -15px;
+  }
+
+  .lg-min\:left-\[-58\%\] {
+    left: -58%;
+  }
+
+  .lg-min\:h-\[480px\] {
+    height: 480px;
   }
 }
