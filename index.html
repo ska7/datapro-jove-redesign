@@ -10,10 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/4768ab6a3c.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="index.css" />
     <title>Jove Redesign</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="bg-navbar-bg h-[52px]">
       <div class="py-[9px] pl-10 pr-[52px] flex">
         <img src="./assets/main-logo.svg" class="flex-1" />
@@ -56,6 +61,7 @@
         </div>
       </div>
     </header>
+    <!-- SUBJECT CARDS -->
     <main>
       <div class="main-container">
         <section class="w-full flex mt-8">
@@ -82,6 +88,7 @@
           </div>
           <div></div>
         </section>
+        <!-- WHAT'S INCLUDED -->
         <section class="grid grid-rows-2 mt-[89px] relative">
           <div class="flex justify-between lg-max:flex-col h-[153px] z-10">
             <div class="card">
@@ -209,8 +216,8 @@
               </h1>
               <p class="content-paragraph">
                 Multiple full length tests designed to mimic the flow and
-                difficulty <br />
-                of the official AP exams to build crucial test-taking experience
+                difficulty of the official AP exams to build crucial test-taking
+                experience
               </p>
               <div class="flex justify-start items-center mt-14 w-full h-10">
                 <button class="subject-button">AP Biology</button>
@@ -250,5 +257,61 @@
         </section>
       </div>
     </main>
+    <footer>
+      <div class="footer-content flex flex-col">
+        <div class="flex w-full px-[106px] footer-container">
+          <div class="footer-block-1">
+            <img
+              class="footer-logo pl-2"
+              src="./assets/main-logo.svg"
+              alt="jove logo footer"
+              height="42"
+            />
+            <div class="jove-links-1">
+              <a href="/privacy">Privacy</a>
+              <span>•</span>
+              <a href="/terms">Terms of Use</a>
+              <span>•</span>
+              <a href="/policies">Policies</a>
+            </div>
+            <div class="footer-social-btns">
+              <a
+                class="footer-social-btn"
+                href="https://twitter.com/JoVEjournal"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                class="footer-social-btn"
+                href="https://www.facebook.com/JOVEjournal/"
+              >
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+              <a
+                class="footer-social-btn"
+                href="https://www.linkedin.com/company/jove/"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="footer-block-2">
+            <div class="jove-links-2">
+              <a href="/about">About JoVE AP</a>
+              <a href="/contact-us">Contact Us</a>
+              <a href="/newsletter">Newsletter</a>
+              <a href="/blog">Blog</a>
+              <a href="/faq">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <span class="h-[62px] w-full bg-[#181B22] box-border mt-[72px]">
+          <p class="trademark w-full h-full flex justify-end items-center">
+            JoVE® is a registered trademark of MyJoVE Corporation Copyright ©
+            2022
+          </p>
+        </span>
+      </div>
+    </footer>
   </body>
 </html>
