@@ -39,7 +39,7 @@
                 <i class="fal fa-sign-in-alt pl-2" width="16"></i>
               </a>
             </li>
-            <li class="nav-item w-[188px] bg-[#ACE8DA]">
+            <li class="nav-item w-[188px] bg-light-green">
               <a>Create Account</a>
             </li>
           </ul>
@@ -51,7 +51,7 @@
       <div class="container">
         <section class="w-full flex mt-[59px]">
           <h1
-            class="flex-3 text-5xl font-semibold flex items-center text-[#2C6D77] leading-[56px] ml-6 sm-max:text-center"
+            class="flex-3 text-5xl font-semibold flex items-center text-title leading-[56px] ml-6 sm-max:text-center"
           >
             Ace your AP exam with short videos and practice tests
           </h1>
@@ -67,59 +67,84 @@
           </div>
           <div></div>
         </section>
-        <!-- WHAT'S INCLUDED -->
-        <section class="grid grid-rows-2 mt-[89px] relative">
-          <div class="flex justify-between lg-max:flex-col h-[153px] z-10">
+
+        <!-- GET STARTED -->
+        <section class="mt-[57px]">
+          <div
+            class="bg-banner h-auto lg-min:h-[104px] rounded-[15px] flex md-max:flex-col md-max:p-8 justify-center items-center"
+          >
+            <h1
+              class="text-xl font-medium leading-7 md-max:mb-5 md-max:text-center"
+            >
+              Sign up to explore the
+              <span class="text-[#00AB8F]">AP Biology</span> course for free now
+              !
+            </h1>
+            <button
+              class="bg-light-green rounded-[40px] py-[14px] px-[50px] ml-6"
+            >
+              Get Started <i class="fa-regular fa-arrow-right"></i>
+            </button>
+          </div>
+        </section>
+        <!-- CONTENT -->
+        <section class="flex flex-col mt-[89px] relative h-auto">
+          <div
+            class="flex justify-between md-max:flex-col lg-max:justify-center lg-max:items-center h-auto z-10"
+          >
             <div class="card">
               <img src="./assets/video-icon.svg" width="89" />
               <p>Engaging video lessons aligned to AP syllabus</p>
             </div>
+
             <div class="card px-9">
               <img src="./assets/audience-icon.svg" width="89" />
-              <p>
-                Answer Explanations <br />
-                in video and text
-              </p>
+              <p>Answer explanations in video and text</p>
             </div>
             <div class="card">
               <img src="./assets/book-icon.svg" width="89" />
-              <p>
-                Multiple practice<br />
-                tests
-              </p>
+              <p>Many practice tests</p>
             </div>
           </div>
-          <div class="mt-[40px] z-10">
-            <ul>
-              <li class="ap-included-content">
-                <img width="18" src="./assets/bullet-point.svg" />
-                <p>400+ animated video lessons covering AP test content</p>
-              </li>
-              <li class="ap-included-content">
-                <img width="18" src="./assets/bullet-point.svg" />
-                <p>
-                  900+ practice questions with detailed answer explanations in
-                  text and video
-                </p>
-              </li>
-              <li class="ap-included-content">
-                <img width="18" src="./assets/bullet-point.svg" />
-                <p>
-                  Diagnostic and full length practice tests with performance
-                  breakdowns
-                </p>
-              </li>
-              <li class="ap-included-content">
-                <img width="18" src="./assets/bullet-point.svg" />
-                <p>Score tracking to check your progress</p>
-              </li>
-            </ul>
-          </div>
-          <div class="bg-banner ap-content-banner absolute h-[400px]">
-            <p class="banner-title text-[50px] leading-[59px]">
+          <!-- WHAT'S INCLUDED -->
+          <div
+            class="bg-banner h-auto p-11 w-full rounded-[10px] flex justify-around items-center md-max:flex-col lg-max:mt-[100px] lg-min:mt-[74px]"
+          >
+            <p
+              class="font-black text-[50px] leading-[59px] text-title md-max:mb-8 md-min:p-6"
+            >
               What's<br />
               Included?
             </p>
+            <div class="h-full flex justify-center items-center">
+              <ul class="">
+                <li class="ap-included-content">
+                  <img width="18" src="./assets/bullet-point.svg" />
+                  <p>
+                    <strong>400+</strong> animated video lessons covering AP
+                    test content
+                  </p>
+                </li>
+                <li class="ap-included-content">
+                  <img width="18" src="./assets/bullet-point.svg" />
+                  <p>
+                    <strong>900+</strong> practice questions with detailed
+                    answer explanations in text and video
+                  </p>
+                </li>
+                <li class="ap-included-content">
+                  <img width="18" src="./assets/bullet-point.svg" />
+                  <p>
+                    Diagnostic and full length practice tests with performance
+                    breakdowns
+                  </p>
+                </li>
+                <li class="ap-included-content">
+                  <img width="18" src="./assets/bullet-point.svg" />
+                  <p>Score tracking to check your progress</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
         <!-- VIDEO LESSONS -->
@@ -138,7 +163,7 @@
               class="flex flex-col justify-center items-start w-full ml-[120px] md-max:flex-col md-max:justify-center md-max:items-center md-max:ml-0 md-max:mt-20"
             >
               <h1
-                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-text-secondary"
+                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title"
               >
                 Video Lessons & Explanations
               </h1>
@@ -155,25 +180,31 @@
               </div>
             </div>
           </div>
-          <!-- BOTTOM PART -->
+        </section>
+      </div>
+      <!-- BOTTOM PART -->
+      <section class="mt-[100px]">
+        <div
+          class="w-screen bg-banner-bg flex md-max:flex-col md-max:justify-center md-max:items-center px-[8%]"
+        >
           <div
-            class="lg-min:h-[480px] flex md-max:flex-col md-max:justify-center md-max:items-center"
+            class="flex md-max:flex-col md-max:justify-center md-max:items-center md-max:p-9"
           >
-            <div class="flex flex-col flex-1">
-              <div class="h-[350px] w-full relative">
-                <div
-                  class="bg-banner flex flex-col justify-end items-end end-of-chapter-banner h-[340px] lg-min:absolute z-10 lg-min:top-[-15px] lg-min:left-[-58%] md-max:bg-transparent"
-                >
-                  <div class="mb-2 mr-[80px]">
-                    <h1 class="banner-title text-[40px] leading-[46.88px]">
-                      End of Chapter Q&A and Tests
-                    </h1>
-                    <p class="content-paragraph">
-                      Chapter wise testing to reinforce concepts and identify
-                      <br />
-                      areas of improvement
-                    </p>
-                  </div>
+            <div class="h-[350px] flex-1 flex flex-col justify-center">
+              <div
+                class="w-full flex flex-col justify-center end-of-chapter-banner"
+              >
+                <div class="mb-2 md-max:text-center">
+                  <h1
+                    class="banner-title text-[40px] text-title font-black leading-[47px]"
+                  >
+                    End of Chapter Q&A and Tests
+                  </h1>
+                  <p class="content-paragraph">
+                    Chapter wise testing to reinforce concepts and identify
+                    <br />
+                    areas of improvement
+                  </p>
                 </div>
               </div>
               <div class="flex justify-start items-center w-full">
@@ -181,21 +212,33 @@
                 <button class="subject-button">AP Chemistry</button>
               </div>
             </div>
-            <div class="flex-1 flex justify-end items-center">
-              <img src="./assets/end-of-chapter.jpg" class="h-[95%]" />
+            <div
+              class="flex justify-center items-center flex-1 py-5 md-max:mt-5"
+            >
+              <img
+                src="./assets/end-of-chapter.png"
+                class="h-[95%]"
+                width="auto"
+              />
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+      <div class="container">
         <!-- FULL LENGTH FINAL TESTS -->
         <section>
           <!-- TOP PART -->
-          <div class="flex w-full bg-white mt-10">
-            <div class="w-[55%] h-auto z-20">
+          <div
+            class="flex w-full bg-white mt-10 md-max:flex-col mad-max:justify-center mad-max:items-center"
+          >
+            <div class="h-auto z-20">
               <img src="./assets/test-example.png" class="h-[550px] w-full" />
             </div>
-            <div class="flex w-[45%] flex-col justify-center ml-14">
+            <div
+              class="flex flex-col justify-center ml-14 mad-max:items-center md-max:text-center"
+            >
               <h1
-                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-text-secondary"
+                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title"
               >
                 Full length final tests
               </h1>
@@ -204,43 +247,45 @@
                 difficulty of the official AP exams to build crucial test-taking
                 experience
               </p>
+              <div
+                class="flex justify-start items-center mt-14 w-full h-10 md-max:justify-center"
+              >
+                <button class="subject-button">AP Biology</button>
+                <button class="subject-button">AP Chemistry</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section>
+        <!-- PERFORMANCE ANALYSIS -->
+        <div class="flex w-screen bg-banner-bg h-[500px] px-[8%]">
+          <div class="flex-1 w-full flex flex-col justify-center z-20">
+            <div class="w-full pl-6">
+              <h1
+                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title"
+              >
+                Performance Analysis
+              </h1>
+              <p class="content-paragraph">
+                Performance analysis at each level of testing, including
+                <br />
+                chapter level insights
+              </p>
               <div class="flex justify-start items-center mt-14 w-full h-10">
                 <button class="subject-button">AP Biology</button>
                 <button class="subject-button">AP Chemistry</button>
               </div>
             </div>
           </div>
-          <!-- BOTTOM PART -->
-          <div class="flex w-full h-[500px]">
-            <div class="flex-1 w-full flex flex-col justify-center z-20">
-              <div class="w-full pl-6">
-                <h1
-                  class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-banner-title-green"
-                >
-                  Performance Analysis
-                </h1>
-                <p class="content-paragraph">
-                  Performance analysis at each level of testing, including
-                  <br />
-                  chapter level insights
-                </p>
-                <div class="flex justify-start items-center mt-14 w-full h-10">
-                  <button class="subject-button">AP Biology</button>
-                  <button class="subject-button">AP Chemistry</button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 relative top-0 w-full">
-              <div
-                class="bg-banner absolute h-[400px] bottom-[180px] left-[-120px]"
-              ></div>
-              <div class="h-[450px] w-[680px] absolute top-28 z-30">
-                <img src="./assets/results-example.png" />
-              </div>
+          <div class="flex justify-center items-center w-full">
+            <div class="h-[450px] w-[680px]">
+              <img src="./assets/diagnostic-test.png" />
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="footer-content flex flex-col">

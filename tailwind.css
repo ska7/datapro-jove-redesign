@@ -28,10 +28,7 @@ video {
 }
 
 .bg-banner {
-  background: rgba(227, 248, 235, 0.5);
-  border-radius: 205.5px;
-  width: 1002px;
-  z-index: 9;
+  @apply bg-banner-bg;
 }
 
 /* HEADER */
@@ -53,7 +50,7 @@ video {
 /* SUBJECT CARDS */
 
 main {
-  @apply h-auto w-screen flex justify-center items-center;
+  @apply h-auto w-screen flex flex-col justify-center items-center;
 }
 
 .container {
@@ -92,8 +89,7 @@ main {
 .card {
   box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
   border: 0.5px solid rgba(0, 0, 0, 0.1);
-  background: #ffffff;
-  @apply w-[394px] h-[153px] rounded-[52px] col-span-1 flex justify-start items-center font-bold text-[#0F464E] leading-[23.44px] pl-7 text-xl;
+  @apply bg-white w-[394px] h-[153px] rounded-[10px] col-span-1 flex justify-start items-center font-medium text-black leading-[23.44px] pl-7 text-xl my-3 md-min:m-3;
 }
 
 .ap-included-content {
@@ -105,27 +101,18 @@ main {
 }
 
 .ap-included-content > p {
-  @apply pl-[25px] text-text-secondary;
-}
-
-.ap-content-banner {
-  right: calc(77% - 100vw);
-  @apply bottom-0 flex flex-col justify-center items-start pl-24 pt-16;
-}
-
-.banner-title {
-  @apply font-black text-banner-title-green;
+  @apply pl-[25px] text-xl font-normal leading-[23px] text-text-secondary;
 }
 
 /* Video Lessons Section */
 
 .subject-button {
-  @apply border border-navbar-btn bg-white w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] font-bold mr-[31px];
+  @apply border border-navbar-btn bg-transparent w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] font-bold mr-[31px];
 }
 
 /*=================Footer=================*/
 footer {
-  @apply text-white relative h-auto bg-[#12151d] pt-[42px] mt-12 flex;
+  @apply text-white relative h-auto bg-[#12151d] pt-[42px] flex;
 }
 
 .footer-content {

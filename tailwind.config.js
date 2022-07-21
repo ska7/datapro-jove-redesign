@@ -7,8 +7,11 @@ module.exports = {
         "navbar-bg": "#0F464E",
         "navbar-btn": "#0EC5B4",
         "banner-title-green": "#0A9B8D",
+        "banner-bg": "rgba(227, 248, 235, 0.5)",
         "inactive-card-green": "rgba(10, 155, 141, 0.7)",
         "text-secondary": "#163B45",
+        "light-green": "#ACE8DA",
+        title: "#2C6D77",
         gray: "#909AA4",
       },
       backgroundImage: {
@@ -32,6 +35,7 @@ module.exports = {
         "md-max": { max: "1023px" },
         "lg-max": { max: "1279px" },
         "xl-max": { max: "1535px" },
+        "md-min": { min: "767px" },
         "lg-min": { min: "1024px" },
         sm: { min: "640px", max: "767px" },
 
