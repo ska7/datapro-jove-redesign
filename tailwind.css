@@ -36,30 +36,18 @@ video {
 
 /* HEADER */
 
-header {
-  mix-blend-mode: normal;
-  box-shadow: 0px 4px 4px rgba(36, 41, 46, 0.27);
-}
+/* NAV */
 
 .nav-item {
-  @apply h-[85%] w-28 font-medium text-sm text-white flex justify-center items-center hover:cursor-pointer leading-5;
+  @apply h-[52px] rounded-[40px] text-lg text-[#202020] flex justify-center items-center hover:cursor-pointer leading-[21.09px];
 }
 
-.nav-item:not(:first-of-type, :last-of-type) {
-  @apply ml-10;
+.nav-item:not(:first-of-type) {
+  @apply ml-[28px];
 }
 
 .nav-item-active {
   @apply rounded-[20px] bg-navbar-btn/50;
-}
-
-.sign-in-btn {
-  @apply !pr-0 min-w-[118px];
-}
-
-.sign-in-btn:after {
-  content: "|";
-  @apply pl-8 text-3xl font-thin flex items-center;
 }
 
 /* SUBJECT CARDS */
@@ -68,13 +56,14 @@ main {
   @apply h-auto w-screen flex justify-center items-center;
 }
 
-.main-container {
+.container {
   width: calc(100vw - 14%);
   @apply h-full;
 }
 
 .subject-card {
-  @apply bg-cover h-[268px] w-[593px] rounded-[30px] mx-3 flex justify-center items-end md-max:mt-8 md-max:w-3/4;
+  filter: drop-shadow(0px 15px 18px rgba(0, 0, 0, 0.06));
+  @apply bg-cover border-white h-[268px] w-[593px] border-8 rounded-[30px] mx-3 flex justify-center items-end md-max:mt-8 md-max:w-3/4;
 }
 
 .biology-card {
@@ -86,11 +75,12 @@ main {
 }
 
 .selected-card {
-  @apply border-2 border-[#1ABCAC];
+  filter: drop-shadow(0px 21px 41px rgba(3, 202, 169, 0.22));
+  @apply border-banner-title-green;
 }
 
 .subject-card-label {
-  @apply font-bold text-[22px] leading-[26px] rounded-t-[30px] h-[60px] w-[200px] bg-white text-inactive-card-green flex justify-center items-center;
+  @apply font-bold text-[22px] leading-[26px] rounded-t-[30px] h-[60px] w-[200px] bg-white text-inactive-card-green flex justify-center items-center pt-2;
 }
 
 .selected-card > .subject-card-label {

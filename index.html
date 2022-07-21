@@ -19,60 +19,39 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="bg-navbar-bg h-[52px]">
-      <div class="py-[9px] pl-10 pr-[52px] flex">
-        <img src="./assets/main-logo.svg" class="flex-1" />
-        <div class="flex-3 flex items-center justify-center">
-          <div class="w-[300px] h-4/5 relative">
-            <img
-              src="./assets/search-icon.svg"
-              width="16"
-              class="absolute right-3 top-0 bottom-0 my-auto"
-              alt="search-icon"
-            />
-            <input
-              placeholder="Search..."
-              class="w-full h-full rounded-3xl text-sm text-gray font-medium pl-5"
-            />
-          </div>
-        </div>
-        <div class="flex-5">
-          <nav class="h-full flex justify-end">
-            <ul class="flex justify-center items-center h-full">
-              <li class="nav-item nav-item-active"><a>AP Biology</a></li>
-              <li class="nav-item">
-                <a>AP Chemistry</a>
-              </li>
-              <li class="nav-item sign-in-btn">
-                <a class="flex"
-                  ><p>Sign In</p>
-                  <img
-                    class="ml-4"
-                    width="16"
-                    src="./assets/sign-in-icon.svg"
-                    alt="sign-in-icon"
-                /></a>
-              </li>
-              <li class="nav-item">
-                <a>Sign Up</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+    <header
+      class="min-h-[52px] mt-[46px] w-auto flex justify-center items-center"
+    >
+      <div
+        class="container h-auto px-3 flex xl-max:justify-between sm-max:flex-col sm-max:justify-center sm-max:items-center"
+      >
+        <img
+          src="/assets/main-logo-dark.svg"
+          width="210"
+          height="53"
+          alt="jove-logo-dark"
+        />
+        <nav class="h-full flex justify-end sm-max:mt-6">
+          <ul class="flex justify-center items-center h-full">
+            <li class="nav-item w-[135px] border border-banner-title-green">
+              <a class="flex justify-center items-center"
+                ><p>Sign In</p>
+                <i class="fal fa-sign-in-alt pl-2" width="16"></i>
+              </a>
+            </li>
+            <li class="nav-item w-[188px] bg-[#ACE8DA]">
+              <a>Create Account</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- SUBJECT CARDS -->
     <main>
-      <div class="main-container">
-        <section class="w-full flex mt-8">
-          <img
-            src="/assets/main-logo-dark.svg"
-            width="210"
-            height="53"
-            alt="jove-logo-dark"
-          />
+      <div class="container">
+        <section class="w-full flex mt-[59px]">
           <h1
-            class="flex-3 text-3xl font-semibold flex items-center text-[#163B45] leading-9 ml-12"
+            class="flex-3 text-5xl font-semibold flex items-center text-[#2C6D77] leading-[56px] ml-6 sm-max:text-center"
           >
             Ace your AP exam with short videos and practice tests
           </h1>
