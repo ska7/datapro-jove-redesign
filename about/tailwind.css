@@ -88,6 +88,32 @@ header {
   background-color: #00AB8F;
 }
 
+.reversed-section {
+  display: grid;
+  grid-template-areas: "text video";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1023px) {
+  .reversed-section {
+    display: grid;
+    grid-template-areas: "video" "text";
+    grid-template-rows: 1.3fr 1fr;
+    grid-template-columns: 1fr;
+  } 
+}
+
+.reversed-section-video {
+  grid-area: video;
+}
+
+.reversed-section-text {
+  grid-area: text;
+}
+
+
+
 /*=================Footer=================*/
 footer {
   @apply text-white relative h-auto bg-[#12151d] pt-[42px] flex;

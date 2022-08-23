@@ -595,31 +595,22 @@ video {
   z-index: 20;
 }
 
+.my-\[50px\] {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .my-\[80px\] {
   margin-top: 80px;
   margin-bottom: 80px;
-}
-
-.my-\[100px\] {
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.my-\[150px\] {
-  margin-top: 150px;
-  margin-bottom: 150px;
 }
 
 .\!ml-11 {
   margin-left: 2.75rem !important;
 }
 
-.mt-\[80px\] {
-  margin-top: 80px;
-}
-
-.mt-\[72px\] {
-  margin-top: 72px;
+.mb-10 {
+  margin-bottom: 2.5rem;
 }
 
 .mt-\[125px\] {
@@ -628,6 +619,10 @@ video {
 
 .mb-\[70px\] {
   margin-bottom: 70px;
+}
+
+.mt-\[72px\] {
+  margin-top: 72px;
 }
 
 .box-border {
@@ -668,6 +663,14 @@ video {
 
 .w-\[188px\] {
   width: 188px;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
 }
 
 .flex-1 {
@@ -801,6 +804,10 @@ video {
   line-height: 46.88px;
 }
 
+.leading-9 {
+  line-height: 2.25rem;
+}
+
 .tracking-\[0\.5px\] {
   letter-spacing: 0.5px;
 }
@@ -923,6 +930,30 @@ header {
   height: 6px;
   width: 100%;
   background-color: #00AB8F;
+}
+
+.reversed-section {
+  display: grid;
+  grid-template-areas: "text video";
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1023px) {
+  .reversed-section {
+    display: grid;
+    grid-template-areas: "video" "text";
+    grid-template-rows: 1.3fr 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+
+.reversed-section-video {
+  grid-area: video;
+}
+
+.reversed-section-text {
+  grid-area: text;
 }
 
 /*=================Footer=================*/
@@ -1154,6 +1185,10 @@ footer {
     align-items: center;
   }
 
+  .md-max\:justify-start {
+    justify-content: flex-start;
+  }
+
   .md-max\:justify-center {
     justify-content: center;
   }
@@ -1169,6 +1204,10 @@ footer {
 
   .md-max\:pr-0 {
     padding-right: 0px;
+  }
+
+  .md-max\:text-left {
+    text-align: left;
   }
 
   .md-max\:text-center {
@@ -1196,26 +1235,18 @@ footer {
 }
 
 @media (min-width: 767px) {
+  .md-min\:my-\[150px\] {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
+
   .md-min\:mx-14 {
     margin-left: 3.5rem;
     margin-right: 3.5rem;
   }
 
-  .md-min\:ml-14 {
-    margin-left: 3.5rem;
-  }
-
   .md-min\:h-\[50px\] {
     height: 50px;
-  }
-
-  .md-min\:border-r {
-    border-right-width: 1px;
-  }
-
-  .md-min\:border-r-\[\#B1B7BD\] {
-    --tw-border-opacity: 1;
-    border-right-color: rgb(177 183 189 / var(--tw-border-opacity));
   }
 
   .md-min\:px-20 {
@@ -1234,5 +1265,16 @@ footer {
 
   .md-min\:pl-24 {
     padding-left: 6rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg-min\:border-r {
+    border-right-width: 1px;
+  }
+
+  .lg-min\:border-r-\[\#B1B7BD\] {
+    --tw-border-opacity: 1;
+    border-right-color: rgb(177 183 189 / var(--tw-border-opacity));
   }
 }
