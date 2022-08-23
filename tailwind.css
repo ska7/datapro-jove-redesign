@@ -31,6 +31,13 @@ video {
   @apply bg-banner-bg;
 }
 
+.subject-buttons-container {
+  @apply flex justify-start items-center mt-14 w-full h-auto md-max:justify-center md-max:items-center;
+}
+
+.subject-button {
+  @apply border border-navbar-btn bg-transparent w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] sm-max:text-[14px] font-bold mr-[31px];
+}
 /* HEADER */
 
 /* NAV */
@@ -89,8 +96,9 @@ main {
 .card {
   box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
   border: 0.5px solid rgba(0, 0, 0, 0.1);
-  @apply bg-white w-[394px] h-[153px] rounded-[10px] col-span-1 flex justify-start items-center font-medium text-black leading-[23.44px] pl-7 text-xl my-3 md-min:m-3;
+  @apply pr-4 bg-white flex-1 md-max:w-full h-[153px] rounded-[10px] flex justify-start items-center font-medium md-max:text-sm text-black leading-[23.44px] pl-7 text-xl my-3 md-min:m-3;
 }
+/* md-min:w-[394px] md-max:w-[90%] */
 
 .ap-included-content {
   @apply flex font-semibold text-lg leading-5;
@@ -105,10 +113,6 @@ main {
 }
 
 /* Video Lessons Section */
-
-.subject-button {
-  @apply border border-navbar-btn bg-transparent w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] font-bold mr-[31px];
-}
 
 /*=================Footer=================*/
 footer {
@@ -162,15 +166,15 @@ footer {
   color: #ffffff;
   text-decoration: none;
   padding: 0 2rem;
-  border-right: 1px solid rgba(255, 255, 255, 0.32);
+  border-right: 1px solid  rgba(255, 255, 255, 0.1);
 }
 
 .jove-links-2 a:first-child {
-  font-weight: 900;
+  /* font-weight: 900; */
 }
 
 .jove-links-2 a:last-child {
-  border: none;
+  /* border: none; */
 }
 
 .jove-links-2 a:visited,
@@ -240,8 +244,8 @@ footer {
   }
 
   .jove-links-2 {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     color: #ffffff;
     text-decoration: none;
     font-size: 15px;
@@ -256,14 +260,15 @@ footer {
   }
 
   .jove-links-2 a {
+    padding: 20px 4rem 0px 0px !important;
+    text-align: left;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.32);
+    /* border-bottom: 1px solid rgba(255, 255, 255, 0.32); */
     border-right: 0;
   }
 
   .trademark {
-    border: 1px solid white;
     bottom: 0;
     right: 0;
     letter-spacing: 0.06px;

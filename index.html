@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="index.css" />
     <title>Jove Redesign</title>
   </head>
-  <body>
+  <body >
     <!-- HEADER -->
     <header
-      class="min-h-[52px] mt-[46px] w-auto flex justify-center items-center"
+      class="min-h-[52px] mt-[46px] w-full flex justify-center items-center"
     >
       <div
         class="container h-auto px-3 flex xl-max:justify-between sm-max:flex-col sm-max:justify-center sm-max:items-center"
@@ -51,7 +51,7 @@
       <div class="container">
         <section class="w-full flex mt-[59px]">
           <h1
-            class="flex-3 text-5xl font-semibold flex items-center text-title leading-[56px] ml-6 sm-max:text-center"
+            class="flex-3 text-5xl sm-max:text-2xl font-semibold flex items-center text-title leading-[56px] ml-6 sm-max:text-center"
           >
             Ace your AP exam with short videos and practice tests
           </h1>
@@ -90,20 +90,20 @@
         <!-- CONTENT -->
         <section class="flex flex-col mt-[89px] relative h-auto">
           <div
-            class="flex justify-between md-max:flex-col lg-max:justify-center lg-max:items-center h-auto z-10"
+            class="flex justify-between md-max:flex-col lg-max:justify-center lg-max:items-center h-auto"
           >
             <div class="card">
               <img src="./assets/video-icon.svg" width="89" />
-              <p>Engaging video lessons aligned to AP syllabus</p>
+              <p class="pr-1">Engaging video lessons aligned to AP syllabus</p>
             </div>
 
-            <div class="card px-9">
+            <div class="card">
               <img src="./assets/audience-icon.svg" width="89" />
               <p>Answer explanations in video and text</p>
             </div>
             <div class="card">
               <img src="./assets/book-icon.svg" width="89" />
-              <p>Many practice tests</p>
+              <p class="w-full">Many practice tests</p>
             </div>
           </div>
           <!-- WHAT'S INCLUDED -->
@@ -148,19 +148,21 @@
           </div>
         </section>
         <!-- VIDEO LESSONS -->
-        <section class="mt-[150px]">
+        <section class="mt-[80px]">
           <!-- TOP PART -->
           <div
             class="flex bg-white md-max:flex-col md-max:justify-center md-max:items-center"
           >
-            <video width="550" autoplay muted class="rounded-[45px] z-20">
+          <div class="flex-1">
+            <video autoplay muted class="rounded-[45px] z-20">
               <source
                 src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
                 type="video/mp4"
               />
             </video>
+          </div>
             <div
-              class="flex flex-col justify-center items-start w-full ml-[120px] md-max:flex-col md-max:justify-center md-max:items-center md-max:ml-0 md-max:mt-20"
+            class="flex flex-col justify-center md-min:ml-14 md-max:mt-10 mad-max:items-center md-max:text-center flex-1"
             >
               <h1
                 class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title md-max:text-center"
@@ -172,7 +174,7 @@
                 paired with question-wise answer explanations in video and text
               </p>
               <div
-                class="flex justify-start items-center mt-14 w-full h-10 md-max:justify-center md-max:items-center"
+                class="subject-buttons-container"
               >
                 <button class="subject-button">AP Biology</button>
                 <button class="subject-button">AP Chemistry</button>
@@ -184,29 +186,29 @@
       <!-- BOTTOM PART -->
       <section class="mt-[100px]">
         <div
-          class="w-screen bg-banner-bg flex md-max:flex-col md-max:justify-center md-max:items-center px-[8%]"
+          class="w-screen bg-banner-bg flex md-max:flex-col md-max:justify-center px-[8%]"
         >
           <div
-            class="flex md-max:flex-col md-max:justify-center md-max:items-center md-max:p-9"
+            class="flex md-max:flex-col md-max:justify-center md-max:py-9"
           >
-            <div class="h-[350px] flex-1 flex flex-col justify-center">
+            <div class="h-full flex-1 flex flex-col justify-center w-full">
               <div
                 class="w-full flex flex-col justify-center end-of-chapter-banner"
               >
-                <div class="mb-2 md-max:text-center">
+                <div class="mb-2 md-max:text-center px-2">
                   <h1
-                    class="banner-title text-[40px] text-title font-black leading-[47px]"
-                  >
-                    End of Chapter Q&A and Tests
-                  </h1>
-                  <p class="content-paragraph">
-                    Chapter wise testing to reinforce concepts and identify
-                    <br />
-                    areas of improvement
+                class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title md-max:text-center "
+              >
+              End of Chapter Q&A and Tests
+              </h1>
+                  <p class="content-paragraph md-max:text-center">
+                    Chapter wise testing to reinforce concepts and identify areas of improvement
                   </p>
                 </div>
               </div>
-              <div class="flex justify-start items-center w-full">
+              <div
+                class="subject-buttons-container"
+              >
                 <button class="subject-button">AP Biology</button>
                 <button class="subject-button">AP Chemistry</button>
               </div>
@@ -234,7 +236,7 @@
               <img src="./assets/test-example.png" />
             </div>
             <div
-              class="flex flex-col justify-center ml-14 mad-max:items-center md-max:text-center"
+              class="flex flex-col justify-center md-min:ml-14 mad-max:items-center md-max:text-center"
             >
               <h1
                 class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title"
@@ -247,7 +249,7 @@
                 experience
               </p>
               <div
-                class="flex justify-start items-center mt-14 w-full h-10 md-max:justify-center"
+              class="subject-buttons-container"
               >
                 <button class="subject-button">AP Biology</button>
                 <button class="subject-button">AP Chemistry</button>
@@ -260,11 +262,11 @@
       <section>
         <!-- PERFORMANCE ANALYSIS -->
         <div
-          class="flex w-screen bg-banner-bg py-8 px-[8%] md-max:mt-24 md-max:flex-col md-max:justify-center md-max:items-center"
+          class="flex w-screen bg-banner-bg py-4 px-[8%] md-max:mt-24 md-max:flex-col md-max:justify-center md-max:items-center h-auto"
         >
-          <div class="flex-1 w-full flex flex-col justify-center z-20">
+          <div class="flex-1 w-full flex flex-col justify-center z-20 md-max:mt-20">
             <div
-              class="w-full pl-6 md-max:flex md-max:justify-center md-max:flex-col md-max:items-center"
+              class="w-full  md-max:flex md-max:justify-center md-max:flex-col md-max:items-center"
             >
               <h1
                 class="text-[40px] font-black leading-[46.88px] tracking-[0.5px] text-title md-max:text-center"
@@ -276,26 +278,25 @@
                 level insights
               </p>
               <div
-                class="flex justify-start items-center mt-14 w-full h-10 md-max:flex md-max:justify-center md-max:items-center"
+              class="subject-buttons-container"
               >
                 <button class="subject-button">AP Biology</button>
                 <button class="subject-button">AP Chemistry</button>
               </div>
             </div>
           </div>
-          <div class="flex justify-center items-center w-full md-max:mt-14">
-            <div class="h-[450px] w-[680px]">
-              <img src="./assets/diagnostic-test.png" />
-            </div>
+          <div class="flex justify-center items-center w-full md-max:mt-14 h-[400px] md-min:h-[550px] flex-1">
+              <img src="./assets/diagnostic-test.png" class='w-full'/>
           </div>
         </div>
       </section>
     </main>
+    <!-- FOOTER -->
     <footer>
       <div class="footer-content flex flex-col">
-        <div class="flex w-full px-[106px] md-max:flex-col">
+        <div class="flex w-full md-min:px-[106px] px-[30px] md-max:flex-col">
           <div
-            class="md-max:flex md-max:flex-col md-max:justify-center md-max:items-center"
+            class="md-max:flex md-max:flex-col xs-min:justify-start md-max:items-start xs-min:w-[20%] md-max:w-full flex-1"
           >
             <img
               class="footer-logo pl-2"
@@ -331,19 +332,23 @@
               </a>
             </div>
           </div>
-          <div class="md-max:flex md-max:justify-center md-max:items-center">
-            <div class="jove-links-2">
-              <a href="/about">About JoVE AP</a>
+          <div class="md-max:flex md-max:justify-center md-max:items-center xs-min:w-[80%] md-max:w-full flex-3">
+            <div class="jove-links-2 w-full flex flex-row justify-start sm-max:justify-start align-center">
+              <div class="flex sm-max:flex-col">
+              <a href="/about">About Us</a>
               <a href="/contact-us">Contact Us</a>
-              <a href="/newsletter">Newsletter</a>
-              <a href="/blog">Blog</a>
-              <a href="/faq">FAQ</a>
+              <a href="/newsletter">Terms Of Use</a>
+            </div>
+            <div class="flex sm-max:flex-col">
+              <a href="/blog">Account</a>
+              <a href="/faq" class="!border-none">FAQ</a>
+            </div>
             </div>
           </div>
         </div>
         <span class="h-[62px] w-full bg-[#181B22] box-border mt-[72px]">
           <p
-            class="trademark w-full h-full flex justify-end items-center md-max:justify-center md-max:pr-0"
+            class="trademark w-full h-full flex justify-center items-center md-max:justify-center md-max:pr-0"
           >
             JoVE® is a registered trademark of MyJoVE Corporation Copyright ©
             2022
