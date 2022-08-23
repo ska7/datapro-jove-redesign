@@ -643,22 +643,6 @@ video {
   margin-top: 72px;
 }
 
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
@@ -717,10 +701,6 @@ video {
 
 .flex-row {
   flex-direction: row;
-}
-
-.flex-row-reverse {
-  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1055,11 +1035,11 @@ main {
 }
 
 .biology-card {
-  background-image: url('/assets/card-biology.jpg');
+  background-image: url('./assets/card-biology.jpg');
 }
 
 .chemistry-card {
-  background-image: url('/assets/card-chemistry.jpg');
+  background-image: url('./assets/card-chemistry.jpg');
 }
 
 .selected-card {
