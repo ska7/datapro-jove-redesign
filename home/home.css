@@ -779,6 +779,10 @@ video {
   background-color: rgb(24 27 34 / var(--tw-bg-opacity));
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .p-11 {
   padding: 2.75rem;
 }
@@ -798,9 +802,14 @@ video {
   padding-right: 50px;
 }
 
-.px-\[8\%\] {
-  padding-left: 8%;
-  padding-right: 8%;
+.px-\[15\%\] {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.py-9 {
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
 }
 
 .px-2 {
@@ -1035,11 +1044,11 @@ main {
 }
 
 .biology-card {
-  background-image: url('./assets/card-biology.jpg');
+  background-image: url('/assets/card-biology.jpg');
 }
 
 .chemistry-card {
-  background-image: url('./assets/card-chemistry.jpg');
+  background-image: url('/assets/card-chemistry.jpg');
 }
 
 .selected-card {
@@ -1075,7 +1084,7 @@ main {
 
 /* What's Included Section */
 
-.card {
+.selling-card {
   box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
   border: 0.5px solid rgba(0, 0, 0, 0.1);
   margin-top: 0.75rem;
@@ -1099,7 +1108,7 @@ main {
 }
 
 @media (max-width: 1023px) {
-  .card {
+  .selling-card {
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1107,7 +1116,7 @@ main {
 }
 
 @media (min-width: 767px) {
-  .card {
+  .selling-card {
     margin: 0.75rem;
   }
 }
@@ -1404,15 +1413,6 @@ footer {
     justify-content: center;
   }
 
-  .md-max\:p-8 {
-    padding: 2rem;
-  }
-
-  .md-max\:py-9 {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
-  }
-
   .md-max\:pr-0 {
     padding-right: 0px;
   }
@@ -1436,19 +1436,17 @@ footer {
   }
 }
 
-@media (max-width: 1535px) {
-  .xl-max\:justify-between {
-    justify-content: space-between;
-  }
-}
-
 @media (min-width: 767px) {
   .md-min\:ml-14 {
     margin-left: 3.5rem;
   }
 
-  .md-min\:h-\[550px\] {
-    height: 550px;
+  .md-min\:h-\[100\%\] {
+    height: 100%;
+  }
+
+  .md-min\:justify-between {
+    justify-content: space-between;
   }
 
   .md-min\:p-6 {

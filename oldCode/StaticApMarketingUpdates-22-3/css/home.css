@@ -1,0 +1,360 @@
+/*=================Home Navbar=================*/
+
+.navbar-transparent {
+    /*opacity: 0.34;*/
+    background: linear-gradient(228.7deg, rgba(33, 120, 146, .2) 0%, rgba(14, 197, 180, .2) 100%);
+    flex: 1;
+    display: flex;
+    backdrop-filter: blur(18px);
+
+    /*width: 100%;*/
+    /*margin-right: auto;*/
+    /*margin-left: auto;*/
+
+}
+
+@media (max-width: 991px) {
+    .navbar-transparent {
+        background: #FFFFFF;
+    }
+
+    .navbar-brand {
+        height: 36px;
+        width: 142px;
+        background-image: url('/img/logo_standard.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+/*=================Hero=================*/
+
+
+.hero {
+    /*border-bottom: 8px solid #1E8899;*/
+    /*background: #ffffff;*/
+}
+
+.hero-bg-1 {
+    background-image: url('/img/green-hero-area-gradient.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -30em right 0;
+    position: relative;
+}
+
+.hero-bg-2 {
+    background-image: url('/img/circle-white.png'), url('/img/triangle-white.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top -4em left -7.5em, top -4em right .5em;
+    background-size: 288px auto, 288px;
+    position: relative;
+}
+
+.hero-content {
+    padding: 14.188rem 0 6rem;
+}
+
+.hero-logo {
+    margin-bottom: 1.5rem;
+}
+
+.hero-header {
+    color: #082B2D;
+    font-size: 43px;
+    font-weight: 500;
+    letter-spacing: 0.9px;
+    line-height: 50px;
+    margin-bottom: 2.5rem;
+}
+
+.hero-subheader {
+    /*color: #F89C25;*/
+    /*font-size: 25px;*/
+    /*font-style: italic;*/
+    /*font-weight: 900;*/
+    /*letter-spacing: 0.53px;*/
+    /*line-height: 29px;*/
+}
+
+.hero-img {
+    border-radius: 14px;
+    /*border-left: 25px solid transparent;*/
+    /*border-bottom: 50px solid transparent;*/
+    max-width: 469px;
+}
+
+.shapes-square {
+    height: 191px;
+    width: 191px;
+    position: absolute;
+    left: 2rem;
+    bottom: -7rem;
+}
+
+
+@media (max-width: 769px) {
+    .hero-bg-1 {
+        background-image: none;
+    }
+
+    .hero-bg-2 {
+        background: linear-gradient(59.61deg, #238999 0%, #34c2b1 100%);
+    }
+
+    .hero-header {
+        color: #FFFFFF;
+        font-size: 33px;
+        line-height: 38px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 9rem 0 6rem;
+    }
+
+    .hero-btns button:first-of-type {
+        flex: 1;
+        /*flex: 0 0 264px*/
+    }
+
+    .hero-btns button:last-of-type {
+        /*flex: 1;*/
+        flex: 0 0 264px
+    }
+
+    .shapes-square {
+        display: none;
+    }
+
+    .left-aligned-divider, .right-aligned-divider {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-header {
+        margin-bottom: 4rem;
+    }
+
+
+    .hero-btns {
+        flex-direction: column;
+    }
+
+    .hero-btns button {
+        margin-bottom: 1.5rem
+    }
+
+    .hero-btns button:last-of-type {
+        /*flex: 1;*/
+        flex: auto;
+    }
+}
+
+
+/*=================Features-1=================*/
+
+.features-1 {
+    background-image: url('/img/triangle-gray.png');
+    background-repeat: no-repeat;
+    /*background-size: px;*/
+    background-position: top 0 left -55em;
+}
+
+.features-1-content {
+    /*padding: 7.813rem 0 5.83rem;*/
+}
+
+.features-middle-item {
+    /*border-left: 1px solid #ededed;*/
+    /*border-right: 1px solid #ededed;*/
+}
+
+
+.features-card-header {
+    opacity: 0.86;
+    color: #082B2D;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.41px;
+    line-height: 38px;
+    text-align: center;
+    margin-bottom: 1.4rem;
+
+    background-color: #082B2D;
+    background-image: linear-gradient(59.61deg, #284b4b 0%, #1f7f81 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.features-card-text {
+    /*height: 216px;*/
+    color: #000000;
+    font-size: 18px;
+    letter-spacing: 0.62px;
+    line-height: 38px;
+    text-align: center;
+}
+
+
+/*=================Home Course Description 1=================*/
+
+.course-content-1 {
+    background-image: url('/img/triangle-hollow.png');
+    background-repeat: no-repeat;
+    /*background-size: px;*/
+    background-position: bottom 0 left -70em;
+}
+
+.course-content-header {
+    opacity: 0.86;
+    color: #082B2D;
+    font-size: 43px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 47px;
+    background-color: #082B2D;
+    background-image: linear-gradient(59.61deg, #284b4b 0%, #1f7f81 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+
+    margin-bottom: 1.2rem;
+}
+
+.course-content-text {
+    max-width: 508px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.62px;
+    line-height: 32px;
+    margin-bottom: 2.375rem;
+}
+
+.course-content-1-img-group {
+    position: relative;
+    /*border: 5px solid blue;*/
+    flex: 1;
+    height: 100%;
+    min-height: 450px;
+    margin-top: 6rem;
+}
+
+.course-content-1-img-back {
+    position: absolute;
+    /*height: 230px;*/
+    width: 403.55px;
+    top: -2rem;
+    left: 4rem;
+    z-index: 2;
+}
+
+.course-content-1-img-mid {
+    position: absolute;
+    top: 8rem;
+    left: -2rem;
+    z-index: 3;
+    max-width: 380px;
+    height: 230px;
+}
+
+.course-content-1-img-front {
+    position: absolute;
+    top: 14rem;
+    left: 12rem;
+    height: 155px;
+    width: 281px;
+    z-index: 4;
+}
+
+@media (max-width: 769px) {
+
+    .course-content-1 {
+        /*padding: 2rem 0 6rem;*/
+        background-image: none;
+    }
+
+    .course-content-1-img-group {
+        display: none;
+    }
+
+    .course-content-header {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .course-content-text {
+        text-align: center;
+    }
+
+    .course-content-btns {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .course-content-btns button {
+        flex: 1;
+    }
+}
+
+/*=================Home Course Description 2=================*/
+
+
+/*=================Learn More=================*/
+
+.learn-more {
+    background-image: url('/img/core-chemistry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top -10em right 0;
+    position: relative;
+}
+
+.learn-more-bg-1 {
+    /*background-color: rgba(0,0,0,0.01);*/
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.61) 100%), radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.13) 59.58%, rgba(0, 0, 0, 0.66) 100%), linear-gradient(228.7deg, rgba(32, 120, 146, .9) 0%, rgba(14, 197, 180, .9) 100%);
+}
+
+.learn-more-content {
+    /*padding: 9rem 0;*/
+}
+
+.video-placeholder {
+    height: 100%;
+    min-height: 296px;
+    flex: 1;
+    width: 100%;
+    max-width: 591px;
+    color: #FFFFFF;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .62px;
+}
+
+.video-placeholder i {
+    font-size: 3rem;
+}
+
+@media (max-width: 769px) {
+    .learn-more {
+        /*background-image: none;*/
+    }
+
+    .learn-more-heading {
+        font-size: 32px;
+        text-align: center;
+    }
+}

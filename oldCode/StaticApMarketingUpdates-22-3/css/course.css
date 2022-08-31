@@ -1,0 +1,223 @@
+.course-navbar-dark {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.course-navbar-dark .fa-bars {
+    color: #FFFFFF;
+}
+
+.course-hero-bg-1 {
+    background-image: url('/img/green-hero-area-gradient.png'), url('/img/hero-circle-green.png');
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, 358px auto;
+    background-position: top -30em right 0, top -10em left -12.5em;
+    position: relative;
+}
+
+.course-hero {
+    border-bottom: 8px solid #1E8899;
+}
+
+.course-hero-content {
+    padding: 8.563rem 0 2.5rem;
+}
+
+.course-hero-subheader {
+    color: #F89C25;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.53px;
+    line-height: 29px;
+}
+
+.course-hero-header {
+    margin-bottom: 1.5rem;
+    max-width: 518px;
+    color: #000000;
+    font-size: 75px;
+    font-weight: 900;
+    letter-spacing: 1.58px;
+    line-height: 88px;
+}
+
+.course-hero-img-group {
+    position: relative;
+    min-height: 393px;
+}
+
+.course-hero-img-group-front {
+    position: absolute;
+    top: 9.2em;
+    left: 14em;
+}
+
+.hero-section-group-1 .whats-included {
+    /*padding-top: 6.563rem;*/
+}
+
+.hero-section-group-1 {
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/img/RectangleRight.png');*/
+    /*background-image: url('/img/RectangleRight.png');*/
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    /*background-position: bottom 0 right -20em;*/
+    background-position: bottom -30em right -48em, bottom -30em right -48em;
+    position: relative;
+}
+
+.hero-section-group-1 .whats-included::before {
+    content: "";
+    background-image: url('/img/triangle-gray-bottom-right.png');
+    background-position: bottom -3em right -24em;
+    background-repeat:  no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.47;
+}
+
+
+.course-description-title {
+    max-width: 456px;
+    color: #000000;
+    font-size: 43px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+}
+
+.course-description-text {
+    max-width: 508px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.62px;
+    line-height: 32px;
+}
+
+.course-description-chapter-tests {
+    /*background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('/img/RectangleRight.png');*/
+    background-image: url('/img/triangle-gray-reverse.png'), url('/img/triangle-gray-bottom-right.png');
+    /*background-image: url('/img/triangle-gray.png'), url('/img/triangle-gray.png');*/
+    background-repeat: no-repeat, no-repeat;
+    background-size: 2000px, contain;
+    /*background-position: bottom 0 right -20em;*/
+    background-position: top -5em right 0em, bottom -1em left -77em;
+    position: relative;
+}
+
+.course-description-chapter-tests .circle-green {
+    height: 322px;
+    width: 322px;
+    position: absolute;
+    left: -12em;
+    top: 1em;
+    z-index: 2;
+}
+
+.course-description-chapter-tests .square-green {
+    height: 322px;
+    width: 322px;
+    position: absolute;
+    right: -7em;
+    top: 30em;
+    z-index: 2;
+}
+
+@media (max-width: 769px) {
+    .course-hero-header {
+        font-size: 50px;
+    }
+
+    .hero-btns button:last-of-type {
+        /*flex: 1;*/
+        flex: 0 0 264px
+    }
+
+    .hero-section-group-1 .whats-included::before {
+        background-image: none;
+    }
+
+    .course-description-chapter-tests {
+        background-image: none;
+        margin-bottom: 2rem;
+    }
+
+    .course-description-chapter-tests .circle-green, .course-description-chapter-tests .square-green {
+        display: none;
+    }
+
+    .course-description .section-padding, .course-whats-included {
+        padding-bottom: 0rem;
+    }
+
+    .course-description-content {
+        margin-bottom: 2rem;
+    }
+
+    .course-description-title {
+        font-size: 34px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .hero-header {
+        margin-bottom: 4rem;
+    }
+
+    .course-hero-bg-1 {
+        background-image: none;
+    }
+
+
+    .hero-btns {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-btns button {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .hero-btns button:last-of-type {
+        /*flex: 1;*/
+        flex: auto;
+    }
+
+    .course-description-content {
+        text-align: center;
+    }
+}
+/*=================Test Strategies=================*/
+
+.test-strategies-bg-1 {
+    /*background-color: rgba(0,0,0,0);*/
+    background: linear-gradient(228.7deg, #217892 0%, #0EC5B4 100%);
+}
+
+.test-strategies-header {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 900;
+    letter-spacing: 1.44px;
+    line-height: 49px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.test-strategies-text {
+    max-width: 610px;
+    color: #FFFFFF;
+    font-size: 18px;
+    letter-spacing: 0.62px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 1.338rem;
+}
