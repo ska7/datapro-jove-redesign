@@ -92,14 +92,14 @@ header {
   display: grid;
   grid-template-areas: "text video";
   grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 0.85fr;
 }
 
 @media (max-width: 1023px) {
   .reversed-section {
     display: grid;
     grid-template-areas: "video" "text";
-    grid-template-rows: 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   } 
 }
@@ -112,6 +112,13 @@ header {
   grid-area: text;
 }
 
+/* OUR IMPACT  */
+
+.impact-card {
+  box-shadow: 0px 4px 25px rgba(144, 154, 164, 0.15);
+  border: 0.5px solid rgba(0, 0, 0, 0.1);
+  @apply pr-4 bg-white flex-1 md-max:w-full h-[153px] rounded-[10px] flex justify-start items-center font-medium md-max:text-sm text-black leading-[23.44px] pl-7 text-xl my-3 md-min:m-3 py-5;
+}
 
 
 /*=================Footer=================*/
