@@ -12,7 +12,7 @@ module.exports = {
         "text-secondary": "#163B45",
         "light-green": "#ACE8DA",
         title: "#2C6D77",
-        gray: "#909AA4",
+        gray: "rgba(255, 255, 255, 0.391579)",
       },
       backgroundImage: {
         "card-biology": "url('./assets/card-biology.jpg')",
