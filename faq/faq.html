@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4768ab6a3c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="faq.css" />
+    <title>Jove Redesign</title>
+  </head>
+  <body >
+    <!-- HEADER START -->
+<header
+class="min-h-[52px] w-full flex justify-center items-center"
+>
+<div
+  class="container h-auto px-3 flex md-min:justify-between sm-max:flex-col sm-max:justify-center sm-max:items-center w-full"
+>
+  <img
+    src="./assets/main-logo.svg"
+    width="210"
+    height="53"
+    alt="jove-logo-dark"
+  />
+  <nav class="h-full flex justify-end sm-max:mt-6">
+    <ul class="flex justify-center items-center h-full">
+      <li class="nav-item w-[135px] border border-white !text-white">
+        <a class="flex justify-center items-center"
+          ><p>Sign In</p>
+          <i class="fal fa-sign-in-alt pl-2" width="16"></i>
+        </a>
+      </li>
+      <li class="nav-item w-[188px] bg-light-green">
+        <a>Create Account</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header>
+<!-- HEADER END -->
+
+    <main class="bg-[#0F464E] min-h-[1000px] md-max:min-h-[700px] flex md-max:flex-col md-max:px-4 md-min:px-40 py-[70px]">
+      <section class="w-full flex flex-col justify-start items-center">
+        <h1 class="text-[37px] md-max:text-xl font-bold text-white text-center">Frequently Asked Questions</h1>
+        <span class="h-[6px] w-[50px] bg-white mt-[43px] md-max:hidden"></span>
+        <!-- ACCORDION -->
+        <div class="w-[70%] md-max:w-full bg-white rounded-[13px] h-auto mt-[30px] p-[16px] accordion" id="accordion">
+
+          <div class="custom-accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="custom-accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+          
+          <div class="custom-accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="custom-accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="custom-accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+          <div class="custom-accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="custom-accordion-btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit?
+              </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordion">
+              <div class="custom-accordion-body">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content flex flex-col">
+        <div class="flex w-full md-min:px-[106px] px-[30px] md-max:flex-col">
+          <div
+            class="md-max:flex md-max:flex-col xs-min:justify-start md-max:items-start xs-min:w-[20%] md-max:w-full flex-1"
+          >
+            <img
+              class="footer-logo pl-2"
+              src="./assets/main-logo.svg"
+              alt="jove logo footer"
+              height="42"
+            />
+            <div class="jove-links-1">
+              <a href="/privacy">Privacy</a>
+              <span>•</span>
+              <a href="/terms">Terms of Use</a>
+              <span>•</span>
+              <a href="/policies">Policies</a>
+            </div>
+            <div class="footer-social-btns">
+              <a
+                class="footer-social-btn"
+                href="https://twitter.com/JoVEjournal"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a
+                class="footer-social-btn"
+                href="https://www.facebook.com/JOVEjournal/"
+              >
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+              <a
+                class="footer-social-btn"
+                href="https://www.linkedin.com/company/jove/"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="md-max:flex md-max:justify-center md-max:items-center xs-min:w-[80%] md-max:w-full flex-3">
+            <div class="jove-links-2 w-full flex flex-row justify-start sm-max:justify-start align-center">
+              <div class="flex sm-max:flex-col">
+              <a href="/about">About Us</a>
+              <a href="/contact-us">Contact Us</a>
+              <a href="/terms-of-use">Terms Of Use</a>
+            </div>
+            <div class="flex sm-max:flex-col">
+              <a href="/blog">Account</a>
+              <a href="/faq" class="!border-none">FAQ</a>
+            </div>
+            </div>
+          </div>
+        </div>
+        <span class="h-[62px] w-full bg-[#181B22] box-border mt-[72px]">
+          <p
+            class="trademark w-full h-full flex justify-center items-center md-max:justify-center md-max:pr-0"
+          >
+            JoVE® is a registered trademark of MyJoVE Corporation Copyright ©
+            2022
+          </p>
+        </span>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+</html>
