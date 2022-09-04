@@ -802,11 +802,6 @@ video {
   padding-right: 50px;
 }
 
-.px-\[15\%\] {
-  padding-left: 15%;
-  padding-right: 15%;
-}
-
 .py-9 {
   padding-top: 2.25rem;
   padding-bottom: 2.25rem;
@@ -948,12 +943,12 @@ video {
   .subject-buttons-container {
     align-items: center;
     justify-content: center;
+    gap: 0.5rem;
   }
 }
 
 .subject-button {
   box-shadow:  0px 4px 4px rgba(144, 154, 164, 0.15);
-  margin-right: 31px;
   height: 60px;
   width: 200px;
   border-radius: 30px;
@@ -971,6 +966,18 @@ video {
 @media (max-width: 767px) {
   .subject-button {
     font-size: 14px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .subject-button {
+    width: 45%;
+  }
+}
+
+@media (min-width: 767px) {
+  .subject-button {
+    margin-right: 31px;
   }
 }
 
@@ -1016,8 +1023,14 @@ main {
 }
 
 .container {
-  width: calc(100vw - 14%);
   height: 100%;
+  width: 98%;
+}
+
+@media (min-width: 767px) {
+  .container {
+    width: 85%;
+  }
 }
 
 .subject-card {
@@ -1044,11 +1057,11 @@ main {
 }
 
 .biology-card {
-  background-image: url('/assets/card-biology.jpg');
+  background-image: url('./assets/card-biology.jpg');
 }
 
 .chemistry-card {
-  background-image: url('/assets/card-chemistry.jpg');
+  background-image: url('./assets/card-chemistry.jpg');
 }
 
 .selected-card {
@@ -1397,6 +1410,10 @@ footer {
     width: 100%;
   }
 
+  .md-max\:flex-1 {
+    flex: 1 1 0%;
+  }
+
   .md-max\:flex-col {
     flex-direction: column;
   }
@@ -1451,6 +1468,11 @@ footer {
 
   .md-min\:p-6 {
     padding: 1.5rem;
+  }
+
+  .md-min\:px-\[10\%\] {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .md-min\:px-\[106px\] {

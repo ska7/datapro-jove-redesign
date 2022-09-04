@@ -32,12 +32,12 @@ video {
 }
 
 .subject-buttons-container {
-  @apply flex justify-start items-center mt-14 w-full h-auto md-max:justify-center md-max:items-center;
+  @apply flex justify-start md-max:gap-2 items-center mt-14 w-full h-auto md-max:justify-center md-max:items-center;
 }
 
 .subject-button {
   box-shadow:  0px 4px 4px rgba(144, 154, 164, 0.15);
-  @apply border border-navbar-btn bg-white w-[200px] h-[60px] rounded-[30px] text-banner-title-green text-[22px] sm-max:text-[14px] font-bold mr-[31px];
+  @apply border border-navbar-btn bg-white w-[200px] md-max:w-[45%] h-[60px] rounded-[30px] text-banner-title-green text-[22px] sm-max:text-[14px] font-bold md-min:mr-[31px];
 }
 /* HEADER */
 
@@ -62,8 +62,7 @@ main {
 }
 
 .container {
-  width: calc(100vw - 14%);
-  @apply h-full;
+  @apply h-full md-min:w-[85%] w-[98%];
 }
 
 .subject-card {
@@ -72,11 +71,11 @@ main {
 }
 
 .biology-card {
-  @apply bg-[url('/assets/card-biology.jpg')];
+  @apply bg-[url('./assets/card-biology.jpg')];
 }
 
 .chemistry-card {
-  @apply bg-[url('/assets/card-chemistry.jpg')];
+  @apply bg-[url('./assets/card-chemistry.jpg')];
 }
 
 .selected-card {
